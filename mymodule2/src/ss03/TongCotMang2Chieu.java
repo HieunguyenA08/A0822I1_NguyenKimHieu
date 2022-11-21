@@ -2,9 +2,8 @@ package ss03;
 
 import java.util.Scanner;
 
-public class MinMangHaiChieu {
+public class TongCotMang2Chieu {
     public static void main(String[] args) {
-
             Scanner scanner = new Scanner(System.in);
             // nhập số hàng số cột
             System.out.println("Nhập số hàng");
@@ -28,16 +27,12 @@ public class MinMangHaiChieu {
                 }
                 System.out.println();
             }
-           //tìm min và in ra kết quả
-            int min = a[0][0];
-            for (int i = 0; i < row; i++) {
-                for (int j = 0; j < col; j++) {
-                    if (min>a[i][j]){
-                        min = a[i][j];
-                    }
-                }
-            }
-            System.out.println("số nhỏ nhất trong mảng là " + min);
+        System.out.print("Nhập cột muốn tính tổng");
+            int column = Integer.parseInt(scanner.nextLine());
+            int sum =0;
+        for (int i = 0; i < row; i++) {
+                sum+=a[i][column-1];
         }
+        System.out.println(sum);
     }
-
+}

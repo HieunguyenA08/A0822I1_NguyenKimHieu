@@ -1,9 +1,8 @@
 package ss03;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class MaxMangHaiCHieu {
+public class TongDuongCheoChinh {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         // nhập số hàng số cột
@@ -28,15 +27,11 @@ public class MaxMangHaiCHieu {
             }
             System.out.println();
         }
-        //tìm max và in ra kết quả
-        int max = a[0][0];
+
+        int sum =0;
         for (int i = 0; i < row; i++) {
-            for (int j = 0; j < col; j++) {
-               if (max<a[i][j]){
-                   max = a[i][j];
-               }
-            }
+            sum+=a[i][i];
         }
-        System.out.println("số lớn nhất trong mảng là " + max);
+        System.out.println("Tổng đường chéo chính"+sum);
     }
 }
