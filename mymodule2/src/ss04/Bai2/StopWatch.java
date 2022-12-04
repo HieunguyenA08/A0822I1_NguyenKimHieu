@@ -1,19 +1,27 @@
 package ss04.Bai2;
 
 public class StopWatch {
-private int startTime ;
-private int endTime ;
+private double startTime ;
+private double endTime ;
 
-    public StopWatch(int startTime, int endTime) {
+    public StopWatch(double startTime, double endTime) {
         this.startTime = startTime;
         this.endTime = endTime;
     }
 
-    public int getStartTime() {
+    public double getStartTime() {
         return startTime;
     }
 
-    public int getEndTime() {
+    public double getEndTime() {
         return endTime;
+    }
+
+    public void setStartTime(double startTime) {
+        this.startTime = startTime;
+    }
+
+    public void setEndTime(double endTime) {
+        this.endTime = endTime;
     }
 }

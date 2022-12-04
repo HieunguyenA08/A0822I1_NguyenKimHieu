@@ -6,5 +6,6 @@ public class Main {
     student1.setName("Hieu");
     student1.setClasses("AO8");
         System.out.println(student1.getName() + " học lớp " + student1.getClasses());
+
     }
 }
